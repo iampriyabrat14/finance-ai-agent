@@ -1,0 +1,20 @@
+# ── LLM Providers ─────────────────────────────────────────────
+groq>=0.9.0               # Primary LLM (llama-3.3-70b-versatile)
+openai>=1.30.0            # Fallback LLM (gpt-4o)
+
+# ── Agent Orchestration ────────────────────────────────────────
+langgraph>=0.1.0          # LangGraph state machine & workflow
+langchain>=0.2.0          # LangChain core
+langchain-openai>=0.1.0   # LangChain OpenAI integration
+
+# ── Data Sources ───────────────────────────────────────────────
+yfinance>=0.2.40          # Price, fundamentals, options, news (no key needed)
+requests>=2.31.0          # SEC EDGAR REST API calls (no key needed)
+tavily-python>=0.3.0      # Real-time web search & news (TAVILY_API_KEY required)
+
+# ── UI & Report Export ─────────────────────────────────────────
+streamlit>=1.35.0         # Web UI with HITL checkpoint
+reportlab>=4.0.0          # Professional PDF report generation
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv>=1.0.0      # Load .env for API keys
